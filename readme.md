@@ -13,7 +13,7 @@ Simple demo app using Retrofit & Kotlin Coroutine
 
 
 ### How to Compile?
-* You need to get `api key` from [developers.themoviedb.org](https://developers.themoviedb.org/)
+* You need to get `api key` from [themoviedb.org](https://developers.themoviedb.org/), and go to [developer page](https://developers.themoviedb.org/) for complete docs
 * Once you get the api key, then create file named `credential.properties` on rootDir project
 * Put your api key in `credential.properties` like : `api_key=xxxxxxxxxxxxxxxx`
 * And done :)
