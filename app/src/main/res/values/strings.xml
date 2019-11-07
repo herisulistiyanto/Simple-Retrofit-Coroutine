@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RetrofitCoroutine</string>
+    <string name="text_score">Score : %s</string>
+    <string name="text_release">Release date : %s</string>
+    <string name="text_detail_label_overview">Overview</string>
+    <string name="text_toolbar_title_movie_detail">Movie Detail</string>
+</resources>

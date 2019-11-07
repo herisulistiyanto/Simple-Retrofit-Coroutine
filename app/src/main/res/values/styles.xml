@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#494949</item>
+        <item name="colorPrimaryDark">#252525</item>
+        <item name="colorAccent">#673AB7</item>
+    </style>
+
+    <style name="headerText">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="contentMediumText">
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="contentSmallText">
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

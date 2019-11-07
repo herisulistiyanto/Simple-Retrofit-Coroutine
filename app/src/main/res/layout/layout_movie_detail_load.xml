@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#252525">
+
+        <View
+            android:id="@+id/stubMovieDetail"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@drawable/bg_shimmer_rect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideDetailLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="6dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideDetailRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="6dp" />
+
+        <View
+            android:id="@+id/stubChipGroupGenre"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_shimmer_rect"
+            app:layout_constraintStart_toStartOf="@id/guideDetailLeft"
+            app:layout_constraintTop_toBottomOf="@id/stubMovieDetail"/>
+
+        <View
+            android:id="@+id/stubChipGroupGenre2"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_shimmer_rect"
+            app:layout_constraintLeft_toRightOf="@id/stubChipGroupGenre"
+            app:layout_constraintTop_toTopOf="@id/stubChipGroupGenre"/>
+
+        <View
+            android:id="@+id/stubChipGroupGenre3"
+            android:layout_width="44dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_shimmer_rect"
+            app:layout_constraintLeft_toRightOf="@id/stubChipGroupGenre2"
+            app:layout_constraintTop_toTopOf="@id/stubChipGroupGenre2"/>
+
+        <View
+            android:id="@+id/stubLabelDetailOverview"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_shimmer_rect"
+            android:textColor="@android:color/white"
+            app:layout_constraintLeft_toLeftOf="@id/guideDetailLeft"
+            app:layout_constraintTop_toBottomOf="@id/stubChipGroupGenre" />
+
+        <View
+            android:id="@+id/stubDetailOverview1"
+            android:layout_width="0dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_shimmer_rect"
+            app:layout_constraintEnd_toEndOf="@id/guideDetailRight"
+            app:layout_constraintStart_toStartOf="@id/guideDetailLeft"
+            app:layout_constraintTop_toBottomOf="@id/stubLabelDetailOverview" />
+
+        <View
+            android:id="@+id/stubDetailOverview2"
+            android:layout_width="0dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_shimmer_rect"
+            app:layout_constraintEnd_toEndOf="@id/guideDetailRight"
+            app:layout_constraintStart_toStartOf="@id/guideDetailLeft"
+            app:layout_constraintTop_toBottomOf="@id/stubDetailOverview1" />
+
+        <View
+            android:id="@+id/stubDetailOverview3"
+            android:layout_width="200dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_shimmer_rect"
+            app:layout_constraintStart_toStartOf="@id/guideDetailLeft"
+            app:layout_constraintTop_toBottomOf="@id/stubDetailOverview2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

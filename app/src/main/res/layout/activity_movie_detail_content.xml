@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525">
+
+    <ImageView
+        android:id="@+id/ivMovieDetail"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:contentDescription="ImageMovieDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText"
+        tools:src="@drawable/bg_shimmer_rect" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideDetailLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="6dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideDetailRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="6dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivMovieDetail" />
+
+    <TextView
+        android:id="@+id/tvLabelDetailOverview"
+        style="@style/headerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_detail_label_overview"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/guideDetailLeft"
+        app:layout_constraintRight_toRightOf="@id/guideDetailRight"
+        app:layout_constraintTop_toBottomOf="@id/chipGroupGenre" />
+
+    <TextView
+        android:id="@+id/tvDetailOverview"
+        style="@style/contentSmallText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@id/guideDetailRight"
+        app:layout_constraintStart_toStartOf="@id/guideDetailLeft"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelDetailOverview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
