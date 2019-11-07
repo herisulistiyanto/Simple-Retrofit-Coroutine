@@ -8,6 +8,8 @@ Simple demo app using Retrofit & Kotlin Coroutine
 * Kotlin Coroutine
 * Gradle Kotlin DSL
 * MVVM Pattern
+* Koin
+* Shimmer
 
 
 ### How to Compile?
